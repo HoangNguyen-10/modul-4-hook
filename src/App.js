@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CarSelection from './CarSelection';
 import Theme from './TimerComponent';
@@ -11,12 +10,12 @@ import Counter2 from './Counter2';
 function App() {
   return (
     <div className="App">
-      {/* <CarSelection /> */}
+      <CarSelection />
       {/* <TimerComponent /> */}
       {/* <ComponentCounter /> */}
       {/* <ClassComponent /> */}
-      <Counter1 />
-      <Counter2 />
+      {/* <Counter1 /> */}
+      {/* <Counter2 /> */}
 
     </div>
   );

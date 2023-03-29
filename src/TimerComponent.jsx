@@ -5,13 +5,16 @@ export default function TimerComponent() {
     const [count, setCount] = useState(10)
     useEffect(() => {
         const timer = setInterval(() => {
-            setCount(count - 1)
-            if (count === 0) {
+            if (count > 0) {
+                setCount(count - 1)
+
+            } else {
                 alert('time"s up')
+                return clearInterval(timer)
             }
         }, 1000);
-
         return () => clearInterval(timer)
+
     }, [count])
     return (
         <div>
